@@ -106,7 +106,7 @@
             <img src="images/vaccine.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Child Vaccination reminder</h5>
-              <p class="card-text"> Which vaccines do children need to be given? Keep up-to-date on childhood vaccines by using this easy-to-read immunization schedule for infants and children.</p>
+              <p class="card-text">Keep up-to-date on childhood vaccines by using this easy-to-read immunization schedule for infants and children.</p>
             </div>
           </div>
         </a>

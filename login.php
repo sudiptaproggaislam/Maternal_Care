@@ -65,10 +65,10 @@ include('partials/header.php');
                                 <input type="password" name="password" class="form-control">
                             </div>
                             <div class="form-group mb-3">
-                                <a href="password-reset.php" class="float-end" class="teal">Forgot your password?</a>
+                                <a href="password-reset.php" class="float-end" id="teals">Forgot your password?</a>
                             </div>
                             <div class="form-group login-btn">
-                                <button type="submit" name="login_btn" class="btn btn-primary" class="teal">LOG IN</button>
+                                <button type="submit" name="login_btn" class="btn btn-primary" id="teal">LOG IN</button>
                             </div>
                         </form>
                         <hr>

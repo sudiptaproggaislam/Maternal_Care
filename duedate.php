@@ -23,7 +23,7 @@ include('partials/header.php');
 </nav>
 
 <?php
-// include('insertcalculator.php');
+
 if (!empty($_POST['calculator_ok'])) :
 
     //convert time to Unix timestamps
@@ -54,12 +54,12 @@ if (!empty($_POST['calculator_ok'])) :
                 <?php
                 //output 
                 echo '<br><br><h3>Here are the results based on the information you provided: </h3><br>';
-                echo 'Last period :' . date("F d, Y", $lasttime) . '<br>Next period: ' . $next_period . '<br>First firtile day: ' . $firstday . '<br>Last firtile day: ' . $lastday . '<br>';
+                echo 'Last period :' . date("F d, Y", $lasttime) . '<br>Next period: ' . $next_period . '<br>First fertile day: ' . $firstday . '<br>Last fertile day: ' . $lastday . '<br>';
                 echo 'Your estimated <b>due date</b> will be : ' . $duedate; ?>
             </div>
         </div>
-<hr>
-            <div class="row justify-content-center">
+        <hr>
+        <div class="row justify-content-center">
             <div class="row-md-6">
                 <?php
                 //visits to doctor
@@ -115,7 +115,7 @@ if (!empty($_POST['calculator_ok'])) :
             </ul>";
 
                 ?>
-                <p align="center"><input type="button" value="Calculate again!" onclick="window.location='http://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo $_SERVER['REQUEST_URI'] ?>'"></p>
+                <p align="center"><input type="button" value="Calculate again!" class="btn btn-primary calculate_btn" onclick="window.location='http://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo $_SERVER['REQUEST_URI'] ?>'"></p>
             </div>
         </div>
     </div>
@@ -132,13 +132,15 @@ if (!empty($_POST['calculator_ok'])) :
 
     <div class="container calculator">
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card-header">
-                    <h5>Due Date Calculator</h5>
+            <div class="col-md-6 round">
+                <div class="name">
+                    <h4 class="name">Due Date Calculator</h5>
+                        <p>See when your baby is due!</p>
                 </div>
                 <div class="container duedate">
                     <form action="duedate.php" method="POST">
-                        <p>Select the first day of your last menstrual period: <input type="date" name="dates"></p>
+                        <div>Select the first day of your last menstrual period:</div>
+                        <div><input type="date" name="dates"></div>
                         <br>
                         <p>Usual number of days in your period: <select name="days">
                                 <?php
@@ -150,7 +152,7 @@ if (!empty($_POST['calculator_ok'])) :
                                 ?>
                             </select></p>
                         <!-- <input type="submit" name="submit" class="datesubmit"><br> -->
-                        <p align="center"><input type="submit" name="calculator_ok" value="Calculate"></p>
+                        <p align="center"><input type="submit" name="calculator_ok" value="Calculate" class="btn btn-primary calculate_btn"></p>
                     </form>
                 </div>
             </div>

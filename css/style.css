@@ -8,12 +8,26 @@
   }
 
 html, body{
+	background-color: #eee !important;
   height: 100%;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family:  Poppins;
   color: #222;
 
 }
+
+h1,h2,h3,h4,h5,h6,p{
+  font-family:Poppins;
+}
+a{
+  font-family:  Poppins;
+  color: #333;
+}
+a:hover{
+  color:  #a0b2b7;
+  text-decoration: none !important;
+}
+
 /*Navigation starts*/
 #logo-nav{
   padding-top: 0%;
@@ -85,10 +99,14 @@ html, body{
   text-decoration: none;
 }
 
+.btn-signup{
+  width: 100%;
+}
 .btn .signup{
   color: #666d6f !important;
   border: none;
   text-decoration: none;
+  
 }
 
 #login:hover {
@@ -99,52 +117,55 @@ html, body{
   color: #3d3d3d;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-body,html{
-	background-color: #eee !important; 
-	font-family: 'Alata', sans-serif;
-  height: 100%;
+#teal{
+  width: 100%;
+  background-color: #2b8a99;
+  border: none;
 }
-h1,h2,h3,h4,h5,h6,p{
-  font-family: 'Alata', sans-serif; 
+#teal:hover{
+  background-color: teal;
 }
-a{
-  font-family: 'Alata', sans-serif;
-  color: #333;
+div .teal{
+  color: #2b8a99;
 }
-a:hover{
-  color:  #a0b2b7;
-  text-decoration: none !important;
+div .teal:hover{
+  color: rgb(8, 76, 90);
 }
+#teals{
+  color: #2b8a99;
+}
+#teals:hover{
+  color: rgb(8, 76, 90);
+}
+/*Login signup ends*/
 
 /*Due date calculator starts*/
+.name{
+  text-align: center;
+}
+.round{
+  border-radius: 25px;
+}
 .calculator{
   background-color: #fff;
+  height: 100%;
 }
 .duedate{
-  background-color: rgb(165, 173, 175);
+  /* background-color: rgb(175, 232, 247); */
   align-items: center;
   padding: 2px;
 
 }
 .duedate p{
-  color: #ddd;
-}
-
-.copyright{
-  text-align: center; 
-    padding: 20px;
-    font-size: 16px;
-}
-.copyright a{
-  color: #5692a3;
-  font-weight: bold;
-}
-.copyright a:hover{
-  color: #5692a3;
-}
-.para{
   color: #000;
 }
+.calculate_btn{
+  border: none;
+
+}
+/*Due date calculator ends*/
+
+
 /***************************** media query 1366px **********/
 @media only screen and (max-width: 1366px) {
   .container{
