@@ -147,8 +147,13 @@ div .teal:hover{
   border-radius: 25px;
 }
 .calculator{
+  align-content: center;
   background-color: #fff;
   height: 100%;
+  
+}
+.row-md-6{
+  padding: 20px;
 }
 .duedate{
   /* background-color: rgb(175, 232, 247); */

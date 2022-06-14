@@ -46,45 +46,42 @@ if (!empty($_POST['calculator_ok'])) :
 
     //due date $date + 280 days
     $duedatetime = $lasttime + 280 * 24 * 3600 + $diff * 24 * 3600;
-    $duedate = date("F d, Y", $duedatetime); ?>
+    $duedate = date("F d, Y", $duedatetime);
+    //visits to doctor
+    //4 to 28 weeks--> One visit per month (every four weeks)
+    $i_visit = date("F d, Y", $lasttime + 4 * 7 * 24 * 3600);
+    $ii_visit = date("F d, Y", $lasttime + 8 * 7 * 24 * 3600);
+    $iii_visit = date("F d, Y", $lasttime + 12 * 7 * 24 * 3600);
+    $iv_visit = date("F d, Y", $lasttime + 16 * 7 * 24 * 3600);
+    $v_visit = date("F d, Y", $lasttime + 20 * 7 * 24 * 3600);
+    $vi_visit = date("F d, Y", $lasttime + 24 * 7 * 24 * 3600);
+    $vii_visit = date("F d, Y", $lasttime + 28 * 7 * 24 * 3600);
 
-    <div class="container calculator">
+    //28 to 36 weeks --> Two visits per month (every two to three weeks)
+    $viii_visit = date("F d, Y", $lasttime + 30 * 7 * 24 * 3600);
+    $ix_visit = date("F d, Y", $lasttime + 32 * 7 * 24 * 3600);
+    $x_visit = date("F d, Y", $lasttime + 34 * 7 * 24 * 3600);
+    $xi_visit = date("F d, Y", $lasttime + 36 * 7 * 24 * 3600);
+
+    //36 weeks to delivery --> One visit per week
+    $xii_visit = date("F d, Y", $lasttime + 37 * 7 * 24 * 3600);
+    $xiii_visit = date("F d, Y", $lasttime + 38 * 7 * 24 * 3600);
+    $xiv_visit = date("F d, Y", $lasttime + 39 * 7 * 24 * 3600);
+    $xv_visit = date("F d, Y", $lasttime + 40 * 7 * 24 * 3600);
+?>
+
+    <!-- <div class="container calculator"> -->
         <div class="row justify-content-center">
-            <div class="row-md-6">
+            <div class="row-md-6  calculator">
                 <?php
                 //output 
-                echo '<br><br><h3>Here are the results based on the information you provided: </h3><br>';
+                echo '<br><h3>Here are the results based on the information you provided: </h3><br>';
                 echo 'Last period :' . date("F d, Y", $lasttime) . '<br>Next period: ' . $next_period . '<br>First fertile day: ' . $firstday . '<br>Last fertile day: ' . $lastday . '<br>';
-                echo 'Your estimated <b>due date</b> will be : ' . $duedate; ?>
-            </div>
-        </div>
-        <hr>
-        <div class="row justify-content-center">
-            <div class="row-md-6">
+                echo 'Your estimated <b>due date</b> will be : ' . $duedate;
+                ?>
+                <hr>
                 <?php
-                //visits to doctor
-                //4 to 28 weeks--> One visit per month (every four weeks)
-                $i_visit = date("F d, Y", $lasttime + 4 * 7 * 24 * 3600);
-                $ii_visit = date("F d, Y", $lasttime + 8 * 7 * 24 * 3600);
-                $iii_visit = date("F d, Y", $lasttime + 12 * 7 * 24 * 3600);
-                $iv_visit = date("F d, Y", $lasttime + 16 * 7 * 24 * 3600);
-                $v_visit = date("F d, Y", $lasttime + 20 * 7 * 24 * 3600);
-                $vi_visit = date("F d, Y", $lasttime + 24 * 7 * 24 * 3600);
-                $vii_visit = date("F d, Y", $lasttime + 28 * 7 * 24 * 3600);
-
-                //28 to 36 weeks --> Two visits per month (every two to three weeks)
-                $viii_visit = date("F d, Y", $lasttime + 30 * 7 * 24 * 3600);
-                $ix_visit = date("F d, Y", $lasttime + 32 * 7 * 24 * 3600);
-                $x_visit = date("F d, Y", $lasttime + 34 * 7 * 24 * 3600);
-                $xi_visit = date("F d, Y", $lasttime + 36 * 7 * 24 * 3600);
-
-                //36 weeks to delivery --> One visit per week
-                $xii_visit = date("F d, Y", $lasttime + 37 * 7 * 24 * 3600);
-                $xiii_visit = date("F d, Y", $lasttime + 38 * 7 * 24 * 3600);
-                $xiv_visit = date("F d, Y", $lasttime + 39 * 7 * 24 * 3600);
-                $xv_visit = date("F d, Y", $lasttime + 40 * 7 * 24 * 3600);
-
-                echo "<h3>Recommended Schedule for a Healthy Pregnancy</h3>";
+                echo "<h4>Recommended Schedule for a Healthy Pregnancy</h4>";
                 echo "<p><b>For a healthy pregnancy, your doctor will probably want to see you on the following recommended schedule of prenatal visits:</b></p>";
                 echo "<ul>
                 <li>Weeks 4 to 28: 1 prenatal visit a month</li>
@@ -112,18 +109,13 @@ if (!empty($_POST['calculator_ok'])) :
                 <li>14h visit date : $xiv_visit</li>
                 <li>15th visit date : $xv_visit</li>
                 </ul>
-            </ul>";
-
-                ?>
-                <p align="center"><input type="button" value="Calculate again!" class="btn btn-primary calculate_btn" onclick="window.location='http://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo $_SERVER['REQUEST_URI'] ?>'"></p>
+                </ul>"; ?>
+                <div class="row-md-6">
+                    <p align="center"><input type="button" value="Calculate again!" class="btn btn-primary calculate_btn" onclick="window.location='http://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo $_SERVER['REQUEST_URI'] ?>'"></p>
+                </div>
             </div>
         </div>
-    </div>
-    <?php
-
-    ?>
-
-
+    <!-- </div> -->
 
 <?php else :
     //the calculator comes here

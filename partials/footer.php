@@ -22,28 +22,29 @@
      <div class="container-fluid padding">
          <div class="row text-center">
              <div class="col-md-4">
-                 <img src="img/w3newbie.png" alt="">
-                 <hr class="light">
+                 
                  <p></p>
                  <p></p>
                  <p></p>
              </div>
              <div class="col-md-4">
                  <hr class="light">
-                 <h5></h5>
+                 
                  <hr class="light">
                  <p></p>
                  <p></p>
                  <p></p>
              </div>
              <div class="col-md-4">
-                 <hr class="light">
-                 <h5></h5>
-                 <hr class="light">
+                 <!-- <hr class="light"> -->
+                 <!-- <h5></h5>
+                 <hr class="light"> -->
                  <p></p>
              </div>
+             
              <div class="col-12">
                  <hr class="light-100">
+                 <h5 style="color: grey;">Copyright © Sudipta Progga Islam</h5>
              </div>
          </div>
      </div>
