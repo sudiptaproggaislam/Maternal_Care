@@ -70,69 +70,72 @@ if (!empty($_POST['calculator_ok'])) :
     $xv_visit = date("F d, Y", $lasttime + 40 * 7 * 24 * 3600);
 ?>
 
-    <!-- <div class="container calculator"> -->
+    <div class="calculator2">
         <div class="row justify-content-center">
-            <div class="row-md-6  calculator">
-                <?php
+            <div class="row-md-6">
+            <?php
                 //output 
-                echo '<br><h3>Here are the results based on the information you provided: </h3><br>';
-                echo 'Last period :' . date("F d, Y", $lasttime) . '<br>Next period: ' . $next_period . '<br>First fertile day: ' . $firstday . '<br>Last fertile day: ' . $lastday . '<br>';
-                echo 'Your estimated <b>due date</b> will be : ' . $duedate;
-                ?>
+                echo '<h4><p>Here are the results based on the information you provided: </p></h4>';?>
+                <div class="name">
+                <?php
+                echo '<p>Last period :' . date("F d, Y", $lasttime) . '<br>Next period: ' . $next_period . '<br>First fertile day: ' . $firstday . '<br>Last fertile day: ' . $lastday . '<br></p>';
+                echo '<p>Your estimated <b>due date</b> will be : ' . $duedate . '</p>';?></div>
                 <hr>
                 <?php
-                echo "<h4>Recommended Schedule for a Healthy Pregnancy</h4>";
-                echo "<p><b>For a healthy pregnancy, your doctor will probably want to see you on the following recommended schedule of prenatal visits:</b></p>";
+                echo "<h4><p>Recommended Schedule for a Healthy Pregnancy</p></h4>";
+                echo "<p>For a healthy pregnancy, your doctor will probably want to see you on the following recommended schedule of prenatal visits:</p>";
                 echo "<ul>
-                <li>Weeks 4 to 28: 1 prenatal visit a month</li>
+                <li><p>Weeks 4 to 28: 1 prenatal visit a month</p></li>
                 <ul>
-                    <li>1st visit date : $i_visit</li>
-                    <li>2nd visit date : $ii_visit</li>
-                    <li>3rd visit date : $iii_visit</li>
-                    <li>4th visit date : $iv_visit</li>
-                    <li>5th visit date : $v_visit</li>
-                    <li>6th visit date : $vi_visit</li>
-                    <li>7th visit date : $vii_visit</li>
+                    <li><p>1st visit date : $i_visit</p></li>
+                    <li><p>2nd visit date : $ii_visit</p></li>
+                    <li><p>3rd visit date : $iii_visit</p></li>
+                    <li><p>4th visit date : $iv_visit</p></li>
+                    <li><p>5th visit date : $v_visit</p></li>
+                    <li><p>6th visit date : $vi_visit</p></li>
+                    <li><p>7th visit date : $vii_visit</p></li>
                 </ul>
-                <li>Weeks 28 to 36: 1 prenatal visit every 2 weeks</li>
+                <li><p>Weeks 28 to 36: 1 prenatal visit every 2 weeks</p></li>
                 <ul>
-                <li>8th visit date : $viii_visit</li>
-                <li>9th visit date : $ix_visit</li>
-                <li>10th visit date : $x_visit</li>
-                <li>11th visit date : $xi_visit</li>
+                <li><p>8th visit date : $viii_visit</p></li>
+                <li><p>9th visit date : $ix_visit</p></li>
+                <li><p>10th visit date : $x_visit</p></li>
+                <li><p>11th visit date : $xi_visit</p></li>
 
                 </ul>
-                <li>Weeks 36 to 40: 1 prenatal visit every week</li>
+                <li><p>Weeks 36 to 40: 1 prenatal visit every week</p></li>
                 <ul>
-                <li>12th visit date : $xii_visit</li>
-                <li>13th visit date : $xiii_visit</li>
-                <li>14h visit date : $xiv_visit</li>
-                <li>15th visit date : $xv_visit</li>
+                <li><p>12th visit date : $xii_visit</p></li>
+                <li><p>13th visit date : $xiii_visit</p></li>
+                <li><p>14h visit date : $xiv_visit</p></li>
+                <li><p>15th visit date : $xv_visit</p></li>
                 </ul>
                 </ul>"; ?>
                 <div class="row-md-6">
-                    <p align="center"><input type="button" value="Calculate again!" class="btn btn-primary calculate_btn" onclick="window.location='http://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo $_SERVER['REQUEST_URI'] ?>'"></p>
+                    <p align="center"><input type="button" value="Calculate again!" id="calculateagain_btn" class="btn btn-primary" onclick="window.location='http://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo $_SERVER['REQUEST_URI'] ?>'"></p>
                 </div>
             </div>
         </div>
-    <!-- </div> -->
+    </div>
 
 <?php else :
     //the calculator comes here
 ?>
 
 
-    <div class="container calculator">
+    <div class="calculator1">
         <div class="row justify-content-center">
             <div class="col-md-6 round">
                 <div class="name">
+                        <div class="card shadow">
+                    <div class="card-header ">
                     <h4 class="name">Due Date Calculator</h5>
                         <p>See when your baby is due!</p>
-                </div>
-                <div class="container duedate">
+                    </div>
+                    <div class="card-body">
+                    <div class="duedate">
                     <form action="duedate.php" method="POST">
-                        <div>Select the first day of your last menstrual period:</div>
-                        <div><input type="date" name="dates"></div>
+                        <div><p>Select the first day of your last menstrual period: <input type="date" name="dates"></p></div>
                         <br>
                         <p>Usual number of days in your period: <select name="days">
                                 <?php
@@ -144,9 +147,13 @@ if (!empty($_POST['calculator_ok'])) :
                                 ?>
                             </select></p>
                         <!-- <input type="submit" name="submit" class="datesubmit"><br> -->
-                        <p align="center"><input type="submit" name="calculator_ok" value="Calculate" class="btn btn-primary calculate_btn"></p>
+                        <p align="center"><input type="submit" name="calculator_ok" value="Calculate" id="calculate_btn" class="btn btn-primary"></p>
                     </form>
+                        <hr>
+                    </div>
                 </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>

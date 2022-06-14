@@ -146,27 +146,85 @@ div .teal:hover{
 .round{
   border-radius: 25px;
 }
-.calculator{
-  align-content: center;
-  background-color: #fff;
+.calculator1{
+  background-image: url("../images/due-date-calculator.jpg");
+  font-size: 14px;
+  line-height: 1.8;
+  color: #222;
+  font-weight: 400;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-position: center center;
+  padding: 115px 0;
   height: 100%;
   
 }
 .row-md-6{
-  padding: 20px;
+  padding: 20px;    background: #fff;
+
 }
 .duedate{
   /* background-color: rgb(175, 232, 247); */
   align-items: center;
+  align-content: center;
   padding: 2px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  padding: 50px 85px;
+
+}
+.calculator1 .shadow{
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
 
 }
 .duedate p{
   color: #000;
+  font-size: medium;
+  line-height: 1.8;
 }
-.calculate_btn{
+#calculate_btn{
   border: none;
+  background-color: teal;
 
+}
+#calculate_btn:hover{
+  background-color: rgb(39, 72, 78);
+
+}
+#calculateagain_btn{
+  border: none;
+  background-color: teal;
+
+}
+#calculateagain_btn:hover{
+  background-color: rgb(39, 72, 78);
+
+}
+.calculator2{
+  background-image: url("../images/due-date-calculator2.jpeg");
+  font-size: 14px;
+  line-height: 1.8;
+  color: #222;
+  font-weight: 400;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-position: center center;
+  padding: 0 0;
 }
 /*Due date calculator ends*/
 
