@@ -73,14 +73,15 @@ if (!empty($_POST['calculator_ok'])) :
     <div class="calculator2">
         <div class="row justify-content-center">
             <div class="row-md-6">
-            <?php
-                //output 
-                echo '<h4><p>Here are the results based on the information you provided: </p></h4>';?>
-                <div class="name">
                 <?php
-                echo '<p>Last period :' . date("F d, Y", $lasttime) . '<br>Next period: ' . $next_period . '<br>First fertile day: ' . $firstday . '<br>Last fertile day: ' . $lastday . '<br></p>';
-                echo '<p>Your estimated <b>due date</b> will be : ' . $duedate . '</p>';?></div>
+                //output 
+                echo '<h4><p>Here are the results based on the information you provided: </p></h4>'; ?>
+                <div class="name">
+                    <?php
+                    echo '<p>Last period :' . date("F d, Y", $lasttime) . '<br>Next period: ' . $next_period . '<br>First fertile day: ' . $firstday . '<br>Last fertile day: ' . $lastday . '<br></p>';
+                    echo '<p>Your estimated <b>due date</b> will be : ' . $duedate . '</p>'; ?></div>
                 <hr>
+
                 <?php
                 echo "<h4><p>Recommended Schedule for a Healthy Pregnancy</p></h4>";
                 echo "<p>For a healthy pregnancy, your doctor will probably want to see you on the following recommended schedule of prenatal visits:</p>";
@@ -111,8 +112,10 @@ if (!empty($_POST['calculator_ok'])) :
                 <li><p>15th visit date : $xv_visit</p></li>
                 </ul>
                 </ul>"; ?>
-                <div class="row-md-6">
+                <div class="ml-auto justify-content-center">
                     <p align="center"><input type="button" value="Calculate again!" id="calculateagain_btn" class="btn btn-primary" onclick="window.location='http://<?php echo $_SERVER['HTTP_HOST']; ?><?php echo $_SERVER['REQUEST_URI'] ?>'"></p>
+                    <p align="center"><input type="button" value="Get Reminder" id="getreminder_btn" class="btn btn-outline-primary" onclick=""></p>
+
                 </div>
             </div>
         </div>
@@ -127,33 +130,35 @@ if (!empty($_POST['calculator_ok'])) :
         <div class="row justify-content-center">
             <div class="col-md-6 round">
                 <div class="name">
-                        <div class="card shadow">
-                    <div class="card-header ">
-                    <h4 class="name">Due Date Calculator</h5>
-                        <p>See when your baby is due!</p>
-                    </div>
-                    <div class="card-body">
-                    <div class="duedate">
-                    <form action="duedate.php" method="POST">
-                        <div><p>Select the first day of your last menstrual period: <input type="date" name="dates"></p></div>
-                        <br>
-                        <p>Usual number of days in your period: <select name="days">
-                                <?php
-                                for ($i = 20; $i <= 45; $i++) {
-                                    if ($i == 28) $selected = 'selected="true"';
-                                    else $selected = '';
-                                    echo "<option $selected value='$i'>$i</option>";
-                                }
-                                ?>
-                            </select></p>
-                        <!-- <input type="submit" name="submit" class="datesubmit"><br> -->
-                        <p align="center"><input type="submit" name="calculator_ok" value="Calculate" id="calculate_btn" class="btn btn-primary"></p>
-                    </form>
-                        <hr>
+                    <div class="card shadow">
+                        <div class="card-header ">
+                            <h4 class="name">Due Date Calculator</h5>
+                                <p>See when your baby is due!</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="duedate">
+                                <form action="duedate.php" method="POST">
+                                    <div>
+                                        <p>Select the first day of your last menstrual period: <input type="date" name="dates"></p>
+                                    </div>
+                                    <br>
+                                    <p>Usual number of days in your period: <select name="days">
+                                            <?php
+                                            for ($i = 20; $i <= 45; $i++) {
+                                                if ($i == 28) $selected = 'selected="true"';
+                                                else $selected = '';
+                                                echo "<option $selected value='$i'>$i</option>";
+                                            }
+                                            ?>
+                                        </select></p>
+                                    <!-- <input type="submit" name="submit" class="datesubmit"><br> -->
+                                    <p align="center"><input type="submit" name="calculator_ok" value="Calculate" id="calculate_btn" class="btn btn-primary"></p>
+                                </form>
+                                <hr>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>

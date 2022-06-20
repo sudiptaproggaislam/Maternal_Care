@@ -7,7 +7,7 @@
 
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top" id="logo-nav" style="background-color: rgb(148, 203, 219,0.7) !important; " id="logonav">
+  <nav class="navbar navbar-expand-lg navbar-expand-md " id="logo-nav" style="background-color: rgb(148, 203, 219,0.7) !important; " id="logonav">
     <div class="container-fluid" id="logo">
       <br>
       <div class="welcome text-center">
@@ -34,7 +34,8 @@
       <div class="carousel-item active" data-bs-interval="3000">
         <img src="images/1.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h1>Pregnancy Week by Week</h1>
+          
+          <h1><a href="pregnancy.php">Pregnancy Week by Week</a></h1>
           <h3>Pregnancy is an adventure! </h3>
           <h3>Let us help you—find pregnancy week-by-week info on baby's development,
             pregnancy symptoms week-by-week.</h3>
@@ -113,6 +114,23 @@
       </div>
     </div>
   </div>
-</body>
-</html>
+   <!--- Connect -->
+ <div class="container-fluid padding">
+     <div class="row text-center padding">
+         <div class="col-12">
+
+             <hr class="light-100">
+             <h2>Connect</h2>
+
+         </div>
+         <div class="col-12 social padding">
+             <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.google.com"><i class="fab fa-google-plus-g"></i></a>
+             <a href="https://www.instgram.com"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+         </div>
+     </div>
+ </div>
+
 <?php include("partials/footer.php"); ?>
