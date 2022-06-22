@@ -26,6 +26,8 @@
               <li><a class="dropdown-item" href="duedate.php">Calculate Due Date</a></li>
               <li><a class="dropdown-item" href="#">Reminder for Visits</a></li>
               <li><a class="dropdown-item" href="#">Child Vaccination</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Custom Reminder</a></li>
             </ul>
           </li>
           <li class="nav-item">

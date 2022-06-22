@@ -91,7 +91,7 @@
       </div>
 
       <div class="col">
-        <a class="card-block stretched-link text-decoration-none" href>
+        <a class="card-block stretched-link text-decoration-none" href = "maternal_reminder.php">
           <div class="card">
             <img src="images/visit.jpg" class="card-img-top" alt="...">
             <div class="card-body">

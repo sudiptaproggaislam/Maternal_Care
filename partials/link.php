@@ -34,3 +34,7 @@
 
     <!-- Custom Javascript file -->
     <script src="js/main.js"></script>
+
+
+    <!-- Ajax for php function call -->
+    <script type="text/javascript" src="js/ajaxcode.js"></script>
