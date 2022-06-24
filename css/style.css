@@ -202,12 +202,13 @@ div .teal:hover{
   background-color: rgb(39, 72, 78);
 
 }
-#calculateagain_btn{
-  border: none;
+#unset{
+  border-color: teal;
   background-color: teal;
+  color: floralwhite;
 
 }
-#calculateagain_btn:hover{
+#unset:hover{
   background-color: rgb(39, 72, 78);
 
 }
@@ -226,14 +227,15 @@ div .teal:hover{
   background-position: center center;
   padding: 0 0;
 }
-#getreminder_btn{
-    border-color: rgb(251, 65, 65);
-    color: rgb(251, 65, 65);
-    width: 138px;
+#reminderbtn{
+  color: rgb(182 1 1);
+  border-color: rgb(182, 1, 1);
+
 }
-#getreminder_btn:hover{
-    background-color: rgb(230, 37, 37);
-    color: rgb(255, 255, 255);
+#reminderbtn:hover{
+  background-color: rgb(190, 33, 33);
+  color: white;
+
 }
 
 /*Due date calculator ends*/
@@ -313,6 +315,9 @@ div .teal:hover{
   text-shadow: 1px 1px 20px #000;
   padding-bottom: 1rem;
 }
+.w-100 {
+  width: 100%!important;
+}
 /*Carousel ends*/
 /*Card starts*/
 
@@ -347,6 +352,16 @@ a.card-block{
   text-decoration: none;
   color: #000;
 }
+
+.col .card .card-img img:hover{ 
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    transition: transform 1s ease;
+  
+}
+
+
 /*Card ends*/
 
 #jumbotron{

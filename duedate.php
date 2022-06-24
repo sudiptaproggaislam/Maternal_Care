@@ -42,6 +42,7 @@
         // $email = $_SESSION['auth_user']['email'];
         // $verify_token = $_SESSION['auth_user']['authID'];
 
+        // convert date to Unix hex value
         $lasttime = strtotime($dateOfLMP);
 
         // next period start
@@ -131,7 +132,7 @@
                         <form method="POST">
                             <div class="row d-flex">
                                 <div class="col-lg-6">
-                                    <input type="submit" name="unset" id="unset" value="Clear ALL" class="btn btn-outline-info w-100">
+                                    <input type="submit" name="unset" id="unset" value="Calculate Again" class="btn btn-outline-info w-100">
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="submit" name="reminderbtn" id="reminderbtn" value="Get Reminder" class="btn btn-outline-info w-100">

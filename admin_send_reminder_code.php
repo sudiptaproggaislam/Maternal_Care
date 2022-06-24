@@ -1,9 +1,9 @@
 <?php
 session_start();
 $method = $_POST['Method'];
-$method();
+$method();?>
 
-
+<?php
 function sendEmailReminder()
 {
     
@@ -33,9 +33,9 @@ function sendemail_reminder($name, $email, $rdate)
 
     $email_template = "
         <h2>You have a visit on $rdate</h2>
-        <h5>Please visit your doctor within tomorrow</h5>
+        <h3>Please visit your doctor within tomorrow</h3>
         <hr>
-        <h6>Stay Connected With MATERNAL CARE</h6>
+        <h4><b>Stay Connected With MATERNAL CARE</b></h4>
         
     ";
     $mail->Body = $email_template;

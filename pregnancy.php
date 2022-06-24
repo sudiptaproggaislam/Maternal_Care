@@ -38,11 +38,26 @@ include('authentication.php');
 
   </div>
 </div> -->
+<div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/image.jpg" class="d-block w-100 !important" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          
+          <h1><a href="pregnancy.php">Pregnancy Week by Week</a></h1>
+          <h3>Pregnancy is an adventure! </h3>
+          <h3>Let us help you—find pregnancy week-by-week info on baby's development,
+            pregnancy symptoms week-by-week.</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 <!-- </section>  -->
 
 <!-- Blog Carousel -->
-<section>
+<!-- <section>
   <div class="blog">
     <div class="container">
       <div class="owl-carousel owl-theme blog-post">
@@ -81,6 +96,6 @@ include('authentication.php');
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- Blog Carousel -->

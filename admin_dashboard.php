@@ -7,7 +7,19 @@ date_default_timezone_set("Asia/Dhaka");
 $con = mysqli_connect("localhost", "root", "", "maternal_care");
 
 ?>
-
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-expand-md " id="logo-nav" style="background-color: rgb(148, 203, 219,0.7) !important; " id="logonav">
+    <div class="container-fluid" id="logo">
+      <br>
+      <div class="welcome text-center">
+        <div class="col-12">
+          <h1 id="bwe" class="display-4"><a class="navbar-brand" href="home.php">
+              <img src="images/logo.png" alt="" width="60" height="55" class="jumbotron-heading " class="d-inline-block align-text-top"><span id="txt"><b> MATERNAL CARE</b></span>
+            </a></h1>
+        </div>
+      </div>
+    </div>
+  </nav>
 <div class="container mb-5" id="refresh-div">
     <div class="justify-content-center">
         <table class="table table-bordered">

@@ -32,7 +32,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="3000">
-        <img src="images/1.jpg" class="d-block w-100" alt="...">
+        <img src="images/6.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           
           <h1><a href="pregnancy.php">Pregnancy Week by Week</a></h1>
@@ -80,7 +80,7 @@
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <a class="card-block stretched-link text-decoration-none" href = "duedate.php">
-          <div class="card">
+          <div class="card card-img">
             <img src="images/duedate.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Due Date Calculator</h5>
@@ -92,7 +92,7 @@
 
       <div class="col">
         <a class="card-block stretched-link text-decoration-none" href = "maternal_reminder.php">
-          <div class="card">
+          <div class="card card-img">
             <img src="images/visit.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Reminder for visits</h5>
@@ -103,7 +103,7 @@
       </div>
       <div class="col">
         <a class="card-block stretched-link text-decoration-none" href>
-          <div class="card">
+          <div class="card card-img">
             <img src="images/vaccine.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Child Vaccination reminder</h5>

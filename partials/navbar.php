@@ -10,10 +10,10 @@
             <a class="nav-link" href="pregnancy.php">Pregnancy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Postpartum Care</a>
+            <a class="nav-link" href="#">Postpartum Care</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="childcare.php">Child Care</a>
+            <a class="nav-link" href="#">Child Care</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Parenting</a>
