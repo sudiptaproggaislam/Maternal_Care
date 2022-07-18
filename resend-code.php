@@ -16,13 +16,13 @@ function resend_email_verify($name, $email, $verify_token){
     $mail->isSMTP();   
     $mail->SMTPAuth = true;                                         
     $mail->Host = 'smtp.gmail.com'; 
-    $mail->Username = 'sproggaislam@gmail.com';                   
-    $mail->Password = 'lvwkwukcvvedobqg';
+    $mail->Username = 'workmailprogga@gmail.com';                   
+    $mail->Password = 'qqdkjhegjelambon';
     $mail->Mailer = "smtp";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            
     $mail->Port       = 587; 
     $mail->SMTPAutoTLS = false;
-    $mail->setFrom('sproggaislam@gmail.com', $name);
+    $mail->setFrom('workmailprogga@gmail.com', $name);
     $mail->addAddress($email); 
     $mail->isHTML(true);
     $mail->Subject = 'Resend - Verification mail from Progga ';

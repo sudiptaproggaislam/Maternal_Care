@@ -126,8 +126,7 @@ main .site-title .btn:hover{
 
 /* --------------- Blog Carousel ------------ */
 
-main .blog{
-    background: url('../assets/Abract01.png');
+ .blog{
     background-repeat: no-repeat;
     background-position: right;
     height: 100vh;
@@ -135,30 +134,30 @@ main .blog{
     background-size: 65%;
 }
 
-main .blog .blog-post{
+ .blog .blog-post{
     padding-top: 6rem;
 }
 
-main .blog-post .blog-content{
+ .blog-post .blog-content{
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 80%;
     margin: 3rem 2rem;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 20px rgb(213, 26, 26);
 }
 
-main .blog-content .blog-title{
+ .blog-content .blog-title{
     padding: 2rem 0;
 }
 
-main .blog-content .btn-blog{
+ .blog-content .btn-blog{
     padding: .7rem 2rem;
     background: var(--sky);
     margin: .5rem;
 }
 
-main .blog-content span{
+ .blog-content span{
     display: block;
 }
 

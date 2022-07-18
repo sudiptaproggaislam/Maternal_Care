@@ -19,13 +19,13 @@ function sendemail_reminder($name, $email, $rdate)
     $mail->SMTPAuth   = true;                                           //Enable SMTP authentication
 
     $mail->Host       = 'smtp.gmail.com';                               //Set the SMTP server to send through
-    $mail->Username   = 'sproggaislam@gmail.com';                         //SMTP username
-    $mail->Password   = 'lvwkwukcvvedobqg';                             //SMTP password
+    $mail->Username   = 'workmailprogga@gmail.com';                         //SMTP username
+    $mail->Password   = 'qqdkjhegjelambon';                             //SMTP password
 
     $mail->SMTPSecure = 'tls';                                              //Enable implicit TLS encryption
     $mail->Port       = 587;                                            //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    $mail->setFrom('sproggaislam@gmail.com', $name);
+    $mail->setFrom('workmailprogga@gmail.com', $name);
     $mail->addAddress($email);                                          //Name is optional
 
     $mail->isHTML(true);

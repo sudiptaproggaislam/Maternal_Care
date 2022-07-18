@@ -8,19 +8,19 @@
   }
 
 html, body{
-	background-color: #eee !important;
+	background-color: rgb(252, 252, 252) !important;
   height: 100%;
   width: 100%;
-  font-family:  Poppins;
+  font-family: sans-serif Poppins;
   color: #222;
 
 }
 
 h1,h2,h3,h4,h5,h6,p{
-  font-family:Poppins;
+  font-family: sans-serif Poppins;
 }
 a{
-  font-family:  Poppins;
+  font-family: sans-serif Poppins;
   color: #333;
 }
 a:hover{
@@ -62,7 +62,10 @@ a:hover{
 .container{
       align-content: center;
 }
-
+.container1{
+  align-content: center;
+  padding: none;
+}
 #logo{
     flex-direction: column;
 }
@@ -237,34 +240,35 @@ div .teal:hover{
   color: white;
 
 }
-
+.trimp{
+  text-decoration: underline;
+}
+.trimp:hover{
+  text-decoration-color: #2b8a99;
+}
 /*Due date calculator ends*/
 /* Pregnancy Starts */
-
-.preg-img{
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  /* background:url(../images/pregnancy.jpg) no-repeat; */
-  background-size: cover;
-  background-position: center;
-  width: 100%;
+.pregnancy{
+  background-color: #fff !important;
 }
-
-.home .content{
-  max-width: 100%;
+#trimester{
+  color: rgb(25, 109, 127);
+  border-color: rgb(25, 109, 127);
+  background-color: white;
 }
+#trimester:hover{
+  background-color: rgb(25, 109, 127);
+  color: white;
 
-.home .content h3{
-  text-transform: uppercase;
-  color:rgb(209, 97, 97);
 }
+#trimesterpara{
+  color: #000;
+  font-size: large;
 
-.home .content p{
-  font-weight: bold;
   line-height: 1.8;
-  padding:0.1rem 0;
-  color:rgb(209, 97, 97);
+}
+.trimesterdiv{
+  padding: 2rem;
 }
 /* Pregnancy ends */
 
@@ -275,7 +279,7 @@ div .teal:hover{
 }
 .carousel-inner img{
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .carousel-caption {
@@ -370,6 +374,10 @@ a.card-block{
     border-radius: 0.3rem;
     margin-bottom: 0px;
 
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 /***************************** media query 1366px **********/
