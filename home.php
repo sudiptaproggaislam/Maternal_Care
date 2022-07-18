@@ -130,7 +130,7 @@ include('partials/header.php');
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-2 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">Pregnancy</strong>
+          <strong class="d-inline-block mb-2 text-danger">Pregnancy</strong>
           <h3 class="mb-0">Pregnancy Week by Week</h3>
           <div class="mb-1 text-muted">July 12</div>
           <p>Looking for a week-by-week guide to pregnancy? You're in luck!See how your baby is developing each week of your pregnancy.</p>
@@ -145,7 +145,7 @@ include('partials/header.php');
           </a>
           <br>
           <div>
-            <a href="pregnancy.php" class="btn btn-outline-primary ">See More</a>
+            <a href="pregnancy.php" class="btn btn-outline-danger ">See More</a>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -188,13 +188,13 @@ include('partials/header.php');
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-2 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-danger">Health</strong>
+          <strong class="d-inline-block mb-2 text-primary">Health</strong>
           <h3 class="mb-0">Eat Healthy During Pregnancy: Quick Tips</h3>
           <div class="mb-1 text-muted">Nov 11</div>
-          <p>Recommended daily servings include 6-11 servings of breads and grains, two to four servings of fruit, four or more servings of vegetables, four servings of dairy products, and three servings of protein sources (meat, poultry, fish, eggs or nuts).</p>
+          <p>Recommended daily servings include 6-11 servings of breads and grains, two to four servings of fruit, four or more servings of vegetables, four servings of dairy products, and three servings of protein sources (meat, poultry, fish, lentils, eggs or nuts).</p>
           <br>
           <div>
-            <a href="pregnancy.php" class="btn btn-outline-danger ">See More</a>
+            <a href="pregnancy.php" class="btn btn-outline-primary ">See More</a>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -206,23 +206,16 @@ include('partials/header.php');
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-2 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-warning">Child Care</strong>
-          <h3 class="mb-0">Caring for a Newborn Baby</h3>
-          <div class="mb-1 text-muted">May 25</div>
-          <p>Your newborn might be your priority — but postpartum care counts, too. From soreness to discharge, what to expect as you recover from a vaginal delivery.</p>
-          <a href="pregnancy.php" class="trimp">
-            <p class="card-text mb-auto ">The postpartum checkup</p>
-          </a>
-          <a href="pregnancy.php" class="trimp">
-            <p class="card-text mb-auto ">Medications</p>
-          </a>
-          <br>
-          <br>
+          <h3 class="mb-0">Care of the Newborn: Nursing Assessment</h3>
+          <div class="mb-1 text-muted">Dec 20</div>
+          <p>If you had a vaginal birth, your provider places your baby skin-to-skin on your bare chest or belly and covers you both with a blanket. If you had a c-section and were awake during the operation, you may be able to hold your baby skin-to-skin right away.</p>
           <div>
+            <br>
             <a href="pregnancy.php" class="btn btn-outline-warning">See More</a>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <img class="bd-placeholder-img" width="200" height="280" src="images/postpartum.jpeg" alt="">
+          <img class="bd-placeholder-img" width="200" height="280" src="images/newborn.jpg" alt="">
         </div>
       </div>
     </div>
@@ -232,50 +225,34 @@ include('partials/header.php');
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-2 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">Pregnancy</strong>
-          <h3 class="mb-0">Pregnancy Week by Week</h3>
-          <div class="mb-1 text-muted">July 12</div>
-          <p>Looking for a week-by-week guide to pregnancy? You're in luck!See how your baby is developing each week of your pregnancy.</p>
-          <a href="pregnancy.php" class="trimp">
-            <p class="card-text mb-auto ">First Trimester</p>
-          </a>
-          <a href="pregnancy.php" class="trimp">
-            <p class="card-text mb-auto ">Second Trimester</p>
-          </a>
-          <a href="pregnancy.php" class="trimp">
-            <p class="card-text mb-auto ">Third Trimester</p>
-          </a>
+          <strong class="d-inline-block mb-2 text-info">Parenting</strong>
+          <h3 class="mb-0">Positive Parenting Tips</h3>
+          <div class="mb-1 text-muted">April 22</div>
+          <p>Good parenting is an accumulation of actions and interactions that you have with your child. Good parenting aims to develop in children character traits like independence, self-direction, honesty, self-control, kindness, assertiveness and cooperation.</p>
           <br>
           <div>
-            <a href="pregnancy.php" class="btn btn-outline-primary ">See More</a>
+            <a href="pregnancy.php" class="btn btn-outline-info ">See More</a>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <img class="bd-placeholder-img" width="200" height="280" src="images/pregnancy-week-40.jpg" alt="">
+          <img class="bd-placeholder-img" width="200" height="280" src="images/parenting.jpg" alt="">
         </div>
       </div>
     </div>
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-2 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-secondary">Postpartum</strong>
-          <h3 class="mb-0">Optimizing Postpartum Care</h3>
-          <div class="mb-1 text-muted">May 25</div>
-          <p>Your newborn might be your priority — but postpartum care counts, too. From soreness to discharge, what to expect as you recover from a vaginal delivery.</p>
-          <a href="pregnancy.php" class="trimp">
-            <p class="card-text mb-auto ">The postpartum checkup</p>
-          </a>
-          <a href="pregnancy.php" class="trimp">
-            <p class="card-text mb-auto ">Medications</p>
-          </a>
-          <br>
+          <strong class="d-inline-block mb-2 text-success">Vaccination</strong>
+          <h3 class="mb-0">Vaccines for Children</h3>
+          <div class="mb-1 text-muted">August 13</div>
+          <p>Parents should try to have their children vaccinated according to the schedule. A significant delay in vaccination puts children at risk of the serious diseases the vaccines could prevent. Children can get a 1st dose of the vaccine from the day they turn 5.</p>
           <br>
           <div>
-            <a href="pregnancy.php" class="btn btn-outline-secondary ">See More</a>
+            <a href="pregnancy.php" class="btn btn-outline-success ">See More</a>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <img class="bd-placeholder-img" width="200" height="280" src="images/postpartum.jpeg" alt="">
+          <img class="bd-placeholder-img" width="200" height="280" src="images/vaccine2.jpg" alt="">
         </div>
       </div>
     </div>
