@@ -133,7 +133,7 @@ include('partials/header.php');
           <strong class="d-inline-block mb-2 text-danger">Pregnancy</strong>
           <h3 class="mb-0">Pregnancy Week by Week</h3>
           <div class="mb-1 text-muted">July 12</div>
-          <p>Looking for a week-by-week guide to pregnancy? You're in luck!See how your baby is developing each week of your pregnancy.</p>
+          <p>Looking for a week-by-week guide to pregnancy? You're in luck! See how your baby is developing each week of your pregnancy.</p>
           <a href="pregnancy.php" class="trimp">
             <p class="card-text mb-auto ">First Trimester</p>
           </a>

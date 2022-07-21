@@ -10,13 +10,13 @@
             <a class="nav-link" href="pregnancy.php">Pregnancy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Postpartum Care</a>
+            <a class="nav-link" href="postpartum.php">Postpartum Care</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Child Care</a>
+            <a class="nav-link" href="childcare.php">Child Care</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Parenting</a>
+            <a class="nav-link" href="parenting.php">Parenting</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,7 +31,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Explore</a>
+            <a class="nav-link disabled" href="#">Explore</a>
           </li>
         </ul>
         <?php if (!isset($_SESSION['authenticated'])) : ?>

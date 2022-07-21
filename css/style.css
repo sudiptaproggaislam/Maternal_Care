@@ -16,7 +16,7 @@ html, body{
 
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p,li{
   font-family: sans-serif Poppins;
 }
 a{
@@ -270,6 +270,7 @@ div .teal:hover{
 .trimesterdiv{
   padding: 2rem;
 }
+
 /* Pregnancy ends */
 
 /*Carousel starts*/
@@ -321,6 +322,11 @@ div .teal:hover{
 }
 .w-100 {
   width: 100%!important;
+}
+#postpartum{
+  position: absolute;
+  transform: translateY(-50%);
+  margin-right: 10px;
 }
 /*Carousel ends*/
 /*Card starts*/
@@ -379,6 +385,24 @@ a.card-block{
   font-size: 1.25rem;
   font-weight: 300;
 }
+
+/* postpartum starts */
+/* .sidenav{
+  padding-left: 15px;
+  background-color: #c9c9c9;
+}
+.sidenav li.nav-item {
+  background-color: #e0e0e0;
+  padding: 1.1rem;
+} */
+
+p.lead1{
+  font-size: 1.26rem;
+  font-weight: 300;
+}
+
+/* postpartum ends */
+
 
 /***************************** media query 1366px **********/
 @media only screen and (max-width: 1366px) {
