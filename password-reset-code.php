@@ -13,23 +13,17 @@ function send_password_reset($get_name,$get_email,$token){
     $mail->isSMTP();   
     $mail->SMTPAuth = true;                                         
     $mail->Host = 'smtp.gmail.com'; 
-    $mail->Username = 'workmailprogga@gmail.com';                   
-    $mail->Password = 'qqdkjhegjelambon';
+    $mail->Username = 'ashrafulalamamit@gmail.com';                   
+    $mail->Password = 'tvhfvuadyytyuudl';
     $mail->Mailer = "smtp";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            
     $mail->Port       = 587; 
     $mail->SMTPAutoTLS = false;
-    $mail->setFrom('workmailprogga@gmail.com', $get_name);
+    $mail->setFrom('ashrafulalamamit@gmail.com', $get_name);
     $mail->addAddress($get_email); 
     $mail->isHTML(true);
     $mail->Subject = 'Reset Password Notification ';
-    // $mail->SMTPOptions = array(
-    //     'ssl' => array(
-    //     'verify_peer' => false,
-    //     'verify_peer_name' => false,
-    //     'allow_self_signed' => true
-    //     )
-    //     );
+
     $email_template = "
         <h2>Hello</h2>
         <h4>You are receiving this email to reset your password of your account.</h4>

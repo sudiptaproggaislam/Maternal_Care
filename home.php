@@ -44,31 +44,59 @@ include('partials/header.php');
     <div class="carousel-item" data-bs-interval="3000">
       <img src="images/2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h2>Eat Healthy During Pregnancy</h2>
+        <h2><a href="https://www.ucsfhealth.org/education/exercise-during-pregnancy">Eat Healthy During Pregnancy</a></h2>
         <h4>Making smart food choices can help you have a healthy pregnancy and a healthy baby.</h4>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="3000">
       <img src="images/3.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h1>Newborn Care</h1>
+        <h1><a href="childcare.php">Newborn Care</a></h1>
         <h3>Learn how to care for your newborn and find out what to do if your baby has colic, jaundice, or an umbilical hernia.</h3>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="3000">
       <img src="images/4.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h2>Vaccines for Your Children</h2>
+        <h2><a href="childvaccine.php">Vaccines for Your Children</a></h2>
         <h4>Find out which vaccines your child needs from birth through the teen years for protection against serious diseases.</h4>
       </div>
     </div>
   </div>
 </div>
 
+
+
+
+
+
+<!-- Changes -->
+<?php
+
+if (isset($_SESSION['authenticated'])) {
+  $lastperiod=0;
+  include("storestrings.php");
+  
+  $diff = 0;
+
+  if ($lastperiod > 0) {
+    $diff = floor((strtotime("now")-$lastperiod) / 604800);
+    include("pregnancywbw.php");
+  }
+}
+?>
+
+<!-- End Changes -->
+
+
+
+
+
+
 <!--- Seperator -->
 <div class="container-fluid padding">
   <div class="row welcome text-center">
-    <div class="col-12">
+    <div class="col-12 mt-5">
       <h1 class="display-5">Pregnancy, Birth and Baby</h1>
     </div>
   </div>
@@ -106,7 +134,7 @@ include('partials/header.php');
         <div class="card card-img">
           <img src="images/vaccine.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Child Vaccination reminder</h5>
+            <h5 class="card-title">Child Vaccination</h5>
             <p class="card-text">Keep up-to-date on childhood vaccines by using this easy-to-read immunization schedule for infants and children.</p>
           </div>
         </div>
@@ -162,21 +190,21 @@ include('partials/header.php');
           <h3 class="mb-0">Optimizing Postpartum Care</h3>
           <div class="mb-1 text-muted">May 25</div>
           <p>Your newborn might be your priority — but postpartum care counts, too. From soreness to discharge, what to expect as you recover from a vaginal delivery.</p>
-          <a href="pregnancy.php" class="trimp">
+          <a href="postpartum.php" class="trimp">
             <p class="card-text mb-auto ">The postpartum checkup</p>
           </a>
-          <a href="pregnancy.php" class="trimp">
+          <a href="postpartum.php" class="trimp">
             <p class="card-text mb-auto ">Medications</p>
           </a>
           <br>
           <br>
           <div>
-            <a href="pregnancy.php" class="btn btn-outline-secondary ">See More</a>
+            <a href="postpartum.php" class="btn btn-outline-secondary ">See More</a>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
           <img class="bd-placeholder-img" width="200" height="280" src="images/postpartum.jpeg" alt="">
-          
+
 
 
         </div>
@@ -194,7 +222,7 @@ include('partials/header.php');
           <p>Recommended daily servings include 6-11 servings of breads and grains, two to four servings of fruit, four or more servings of vegetables, four servings of dairy products, and three servings of protein sources (meat, poultry, fish, lentils, eggs or nuts).</p>
           <br>
           <div>
-            <a href="pregnancy.php" class="btn btn-outline-primary ">See More</a>
+            <a href="https://health.gov/myhealthfinder/pregnancy/nutrition-and-physical-activity/eat-healthy-during-pregnancy-quick-tips#:~:text=Eat%20a%20variety%20of%20vegetables,bread%2C%20and%20some%20snack%20foods." class="btn btn-outline-primary ">See More</a>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -211,7 +239,7 @@ include('partials/header.php');
           <p>If you had a vaginal birth, your provider places your baby skin-to-skin on your bare chest or belly and covers you both with a blanket. If you had a c-section and were awake during the operation, you may be able to hold your baby skin-to-skin right away.</p>
           <div>
             <br>
-            <a href="pregnancy.php" class="btn btn-outline-warning">See More</a>
+            <a href="childcare.php" class="btn btn-outline-warning">See More</a>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -231,7 +259,7 @@ include('partials/header.php');
           <p>Good parenting is an accumulation of actions and interactions that you have with your child. Good parenting aims to develop in children character traits like independence, self-direction, honesty, self-control, kindness, assertiveness and cooperation.</p>
           <br>
           <div>
-            <a href="pregnancy.php" class="btn btn-outline-info ">See More</a>
+            <a href="parenting.php" class="btn btn-outline-info ">See More</a>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
@@ -248,7 +276,7 @@ include('partials/header.php');
           <p>Parents should try to have their children vaccinated according to the schedule. A significant delay in vaccination puts children at risk of the serious diseases the vaccines could prevent. Children can get a 1st dose of the vaccine from the day they turn 5.</p>
           <br>
           <div>
-            <a href="pregnancy.php" class="btn btn-outline-success ">See More</a>
+            <a href="childvaccine.php" class="btn btn-outline-success ">See More</a>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">

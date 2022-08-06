@@ -24,14 +24,15 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="drop">
               <li><a class="dropdown-item" href="duedate.php">Calculate Due Date</a></li>
-              <li><a class="dropdown-item" href="#">Reminder for Visits</a></li>
-              <li><a class="dropdown-item" href="#">Child Vaccination</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Custom Reminder</a></li>
+              <li><a class="dropdown-item" href="maternal_reminder.php">Reminder for Visits</a></li>
+              <li><a class="dropdown-item" href="childvaccine.php">Child Vaccination</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Explore</a>
+            <a class="nav-link" href="query_page_user.php">Any Query!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="createpost.php">Post</a>
           </li>
         </ul>
         <?php if (!isset($_SESSION['authenticated'])) : ?>

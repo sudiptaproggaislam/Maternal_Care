@@ -62,6 +62,10 @@
                                 <label for="">Confirm Password</label>
                                 <input type="password" name="password" class="form-control">
                             </div> -->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="admincheckbox" value="Yes">
+                                <label class="form-check-label" for="exampleCheck1">register as admin!</label>
+                            </div>
                             <div class="form-group">
                                 <button type="submit" name="register_btn" class="btn btn-secondary btn-signup">SIGN UP</button>
                             </div>

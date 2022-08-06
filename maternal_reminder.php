@@ -1,10 +1,13 @@
 <?php
-session_start();
-if (!isset($_SESSION['authenticated'])) {
-    $_SESSION['status'] = "Please login to access this page";
-    header("Location: login.php");
-    exit(0);
-}
+include("authentication.php");
+?>
+<?php
+// session_start();
+// if (!isset($_SESSION['authenticated'])) {
+//     $_SESSION['status'] = "Please login to access this page";
+//     header("Location: login.php");
+//     exit(0);
+// }
 $page_title = "Reminder for Visits";
 include('partials/link.php');
 include('partials/header.php');

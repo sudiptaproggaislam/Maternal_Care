@@ -1,0 +1,19 @@
+.overlapping ul {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 3fr 6fr;
+    max-width: 600px;
+    list-style: none;
+    margin: 0 0 0 2rem;
+    padding: 2.2rem;
+    background: #f6f3ea;
+    box-shadow: 3px 2px 12px rgb(0 0 0 / 40%);
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    box-sizing: border-box;
+}
+

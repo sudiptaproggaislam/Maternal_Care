@@ -1,0 +1,154 @@
+body{
+	background-color: #efefef;
+}
+
+a{
+  text-decoration: none;
+}
+
+.instagram-card{
+	background: #ffffff;
+	border: 1px solid #f2f2f2;
+	border-radius: 3px;
+	width: 100%;
+    padding: 10px;
+	max-width: 600px;
+	margin: auto;
+    margin-top: 20px;
+}
+
+.instagram-card-header{
+	padding: 5px;
+
+}
+
+.instagram-card-user-name{
+	margin-left:20px;
+	font-weight:bold;
+  color: #262626;
+}
+
+.instagram-card-user-image{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+}
+
+.instagram-card-time{
+	float: right;
+	width: 80px;
+	padding-top:10px;
+	text-align: right;
+	color: #999;
+}
+
+.instagram-card-user-name{
+	margin-left:10px !important;
+	font-weight:bold;
+    color: #262626;
+}
+
+.instagram-card-content{
+  padding: 10px;
+}
+
+.likes{
+  font-weight: bold;
+}
+
+
+
+.hashtag{
+  color: #003569;
+}
+
+.comments{
+    margin-top: 20px;
+  color:#999;
+}
+
+.user-comment{
+  color: #003569;
+}
+
+.instagram-card-footer{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+hr{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 0px;
+ 
+}
+
+
+.footer-action-icons{
+  font-size: 16px;
+  color: #ccc;
+}
+
+.comments-input{
+  border: none;
+  margin-left: 10px;
+}
+
+.img-insta-card{
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+    
+}
+
+.intagram-card-image{
+    padding: 2%;
+}
+
+
+form textarea{
+    width: 100%;
+    background-color: white;
+    outline: none;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left:10px;
+    min-height: 100px;
+    border-radius: 2%;
+  }
+ 
+  .create-post{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    
+  }
+
+  .add-image-post{
+    margin-top: 20px;
+    
+  }
+
+  .post-button{
+    
+    margin-top: 20px;
+    
+  }
+
+  .post-button button {
+    cursor: pointer;
+    background: #b2beb5;
+    border-radius: 4px;
+  }
+ 
+  .catagory-post{
+    margin-top: 20px;
+  }

@@ -16,16 +16,16 @@ function resend_email_verify($name, $email, $verify_token){
     $mail->isSMTP();   
     $mail->SMTPAuth = true;                                         
     $mail->Host = 'smtp.gmail.com'; 
-    $mail->Username = 'workmailprogga@gmail.com';                   
-    $mail->Password = 'qqdkjhegjelambon';
+    $mail->Username = 'ashrafulalamamit@gmail.com';                   
+    $mail->Password = 'tvhfvuadyytyuudl';
     $mail->Mailer = "smtp";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            
     $mail->Port       = 587; 
     $mail->SMTPAutoTLS = false;
-    $mail->setFrom('workmailprogga@gmail.com', $name);
+    $mail->setFrom('ashrafulalamamit@gmail.com', $name);
     $mail->addAddress($email); 
     $mail->isHTML(true);
-    $mail->Subject = 'Resend - Verification mail from Progga ';
+    $mail->Subject = 'Resend - Verification mail from Maternal Care ';
     // $mail->SMTPOptions = array(
     //     'ssl' => array(
     //     'verify_peer' => false,
@@ -34,7 +34,7 @@ function resend_email_verify($name, $email, $verify_token){
     //     )
     //     );
     $email_template = "
-        <h2>You have Registered with Progga</h2>
+        <h2>You have Registered with Maternal Care</h2>
         <h5>Verify your email to Login with the link below</h5>
         <br>
         <a href = 'http://localhost/maternal_care/verify_email.php?token=$verify_token'> Click me </a>

@@ -1,6 +1,10 @@
+<?php
+include("authentication.php");
+?>
+
 <div id="refresh_div">
     <?php
-    session_start();
+    // session_start();
     $page_title = "Due Date Calculator";
     include('partials/link.php');
     // include('partials/config.php');
@@ -26,12 +30,18 @@
     <?php
 
     if (isset($_POST['submit'])) {
-        $_SESSION['dateOfLMP'] = $_POST['dates'];
-        $_SESSION['periodCycle'] = $_POST['days'];
-        $_SESSION['rm'] = TRUE;
+        if (isset($_SESSION['authenticated'])) {
+            $_SESSION['dateOfLMP'] = $_POST['dates'];
+            $_SESSION['periodCycle'] = $_POST['days'];
+            $_SESSION['rm'] = TRUE;
+        } else {
+            $_SESSION['status'] = "Please login first";
+            header("Location: login.php");
+            exit(0);
+        }
     }
     if (isset($_SESSION['rm'])) {
-        $con= mysqli_connect("localhost","root","","maternal_care");
+        $con = mysqli_connect("localhost", "root", "", "maternal_care");
         $visit = array();
 
         $dateOfLMP = $_SESSION['dateOfLMP'];
@@ -129,27 +139,33 @@
                     //   }
                     ?>
                     <div class="ml-auto justify-content-center">
-                        <form method="POST">
+                        <form>
                             <div class="row d-flex">
                                 <div class="col-lg-6">
                                     <input type="submit" name="unset" id="unset" value="Calculate Again" class="btn btn-outline-info w-100">
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="submit" name="reminderbtn" id="reminderbtn" value="Get Reminder" class="btn btn-outline-info w-100">
-                                    <small class="font-rale text-primary">*will send mail one day before visit</small>
+                                    <small class="font-rale text-primary">*will send mail one day before visit</small><br>
+                                    <small class="font-rale text-danger">*will overwrite all the previous dates and datas</small>
                                 </div>
-                            </div>
-                        </form>
 
+                            </div>
+                            <!-- <div class="row d-flex justify-content-center">
+                                <div class="col-lg-6">
+                                    <input type="submit" name="clearhistorybtn" id="clearhistorybtn" value="Clear Previous Dates" class="btn btn-outline-info w-100">
+                                </div>
+                            </div> -->
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
 
-        <?php
-        
+    <?php
+
     } else {
-        ?>
+    ?>
 
         <div class="calculator1">
             <div class="row justify-content-center">
@@ -196,7 +212,6 @@
 </div>
 
 <script type="text/javascript">
-
     function refreshDiv() {
         $('#refresh_div').load(location.href + ' #refresh_div');
         //alert("hello");
@@ -204,4 +219,3 @@
         //   $('#refresh-div').remove();
     }
 </script>
-

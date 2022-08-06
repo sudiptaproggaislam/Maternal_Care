@@ -25,7 +25,7 @@
 
             <div class="col-12">
                 <hr class="light-100">
-                <h5 style="color: grey;">Copyright © 2022 Sudipta Progga Islam</h5>
+                <h5 style="color: grey;">Copyright © 2022 Maternal Care</h5>
             </div>
         </div>
     </div>

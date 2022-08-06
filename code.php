@@ -15,16 +15,16 @@ function sendemail_verify($name, $email, $verify_token){
     $mail->isSMTP();   
     $mail->SMTPAuth = true;                                         
     $mail->Host = 'smtp.gmail.com'; 
-    $mail->Username = 'workmailprogga@gmail.com';                   
-    $mail->Password = 'qqdkjhegjelambon';
+    $mail->Username = 'ashrafulalamamit@gmail.com';                   
+    $mail->Password = 'tvhfvuadyytyuudl';
     $mail->Mailer = "smtp";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            
     $mail->Port       = 587; 
     $mail->SMTPAutoTLS = false;
-    $mail->setFrom('workmailprogga@gmail.com', $name);
+    $mail->setFrom('ashrafulalamamit@gmail.com', $name);
     $mail->addAddress($email); 
     $mail->isHTML(true);
-    $mail->Subject = 'Verification mail from Progga ';
+    $mail->Subject = 'Verification mail from Maternal Care ';
     // $mail->SMTPOptions = array(
     //     'ssl' => array(
     //     'verify_peer' => false,
@@ -33,7 +33,7 @@ function sendemail_verify($name, $email, $verify_token){
     //     )
     //     );
     $email_template = "
-        <h2>You have Registered with Progga</h2>
+        <h2>You have Registered with Maternal Care</h2>
         <h5>Verify your email to Login with the link below</h5>
         <br>
         <a href = 'http://localhost/maternal_care/verify_email.php?token=$verify_token'> Click me </a>
@@ -45,11 +45,47 @@ function sendemail_verify($name, $email, $verify_token){
 
 
 if(isset($_POST['register_btn'])){
+    if(isset($_POST['admincheckbox']) && $_POST['admincheckbox'] == 'Yes') 
+    {
+        $name = $_POST['name'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $verify_token = md5(rand());
+        
+        // Email exists or not
+        $check_email_query = "SELECT email FROM admins WHERE email='$email' LIMIT 1";
+        $check_email_query_run = mysqli_query($con, $check_email_query);
+    
+        if(mysqli_num_rows($check_email_query_run) > 0){
+            $_SESSION['status'] = "Email already exists";
+            header("Location: signup.php");
+    
+        }
+        else{
+            // Insert User Data
+            $query = "INSERT INTO `admins`(`name`, `phone`, `email`, `password`, `verify_token`) VALUES ('$name', '$phone', '$email', '$password','$verify_token' )";
+            $query_run = mysqli_query($con, $query);
+    
+            if($query_run){
+                sendemail_verify("$name", "$email", "$verify_token");
+                $_SESSION['status'] = "Registration Successful! Please Verify your Email.";
+                header("Location: signup.php");
+            }
+            else{
+                $_SESSION['status'] = "Registration Failed";
+                header("Location: signup.php");
+            }
+        }
+    }
+    else
+    {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $verify_token = md5(rand());
+    $due_date= 0;
     
     // Email exists or not
     $check_email_query = "SELECT email FROM users WHERE email='$email' LIMIT 1";
@@ -62,7 +98,7 @@ if(isset($_POST['register_btn'])){
     }
     else{
         // Insert User Data
-        $query = "INSERT INTO `users`(`name`, `phone`, `email`, `password`, `verify_token`) VALUES ('$name', '$phone', '$email', '$password','$verify_token' )";
+        $query = "INSERT INTO `users`(`name`, `phone`, `email`, `password`, `verify_token`,`due_date`) VALUES ('$name', '$phone', '$email', '$password','$verify_token',$due_date )";
         $query_run = mysqli_query($con, $query);
 
         if($query_run){
@@ -76,5 +112,4 @@ if(isset($_POST['register_btn'])){
         }
     }
 }
-
-?>
+}

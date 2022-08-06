@@ -25,7 +25,7 @@ include('partials/header.php');
         <div class="welcome text-center">
             <div class="col-12">
                 <h1 id="bwe" class="display-4">
-                        <a class="navbar-brand" href="home.php">
+                    <a class="navbar-brand" href="home.php">
                         <img src="images/logo.png" alt="" width="60" height="55" class="jumbotron-heading " class="d-inline-block align-text-top"><span id="txt"><b> MATERNAL CARE</b></span>
                     </a>
                 </h1>
@@ -34,7 +34,7 @@ include('partials/header.php');
     </div>
 </nav>
 
-<?php include("partials/navbar.php");?>
+<?php include("partials/navbar.php"); ?>
 
 <div class="py-5">
     <div class="container">
@@ -63,6 +63,10 @@ include('partials/header.php');
                             <div class="form-group mb-3">
                                 <label for="">Password</label>
                                 <input type="password" name="password" class="form-control">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="admincheckbox" value="Yes">
+                                <label class="form-check-label" for="exampleCheck1">login as admin!</label>
                             </div>
                             <div class="form-group mb-3">
                                 <a href="password-reset.php" class="float-end" id="teals">Forgot your password?</a>
